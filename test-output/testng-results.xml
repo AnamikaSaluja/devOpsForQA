@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3612" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3612" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:10Z">
+      <class name="TestCases.UserTest">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:TestCases.UserTest@687080dc]" name="initializeBrowser" is-config="true" duration-ms="63" started-at="2020-06-10T10:02:06Z" finished-at="2020-06-10T10:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="readConstants(java.lang.reflect.Method)[pri:0, instance:TestCases.UserTest@687080dc]" name="readConstants" is-config="true" duration-ms="422" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestCases.UserTest.AddUser() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readConstants -->
+        <test-method status="PASS" signature="Header()[pri:0, instance:TestCases.UserTest@687080dc]" name="Header" is-config="true" duration-ms="69" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Header -->
+        <test-method status="FAIL" signature="AddUser()[pri:1, instance:TestCases.UserTest@687080dc]" name="AddUser" duration-ms="35" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:07Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[body cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: body cannot be null
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+at io.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
+at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:736)
+at Utility.RestClientWrapper.post(RestClientWrapper.java:36)
+at TestCases.UserTest.AddUser(UserTest.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddUser -->
+        <test-method status="PASS" signature="reportFlush(org.testng.ITestResult)[pri:0, instance:TestCases.UserTest@687080dc]" name="reportFlush" is-config="true" duration-ms="295" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddUser status=FAILURE method=UserTest.AddUser()[pri:1, instance:TestCases.UserTest@687080dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportFlush -->
+        <test-method status="PASS" signature="readConstants(java.lang.reflect.Method)[pri:0, instance:TestCases.UserTest@687080dc]" name="readConstants" is-config="true" duration-ms="1" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestCases.UserTest.GetUser() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readConstants -->
+        <test-method status="PASS" signature="Header()[pri:0, instance:TestCases.UserTest@687080dc]" name="Header" is-config="true" duration-ms="1" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Header -->
+        <test-method status="FAIL" signature="GetUser()[pri:2, instance:TestCases.UserTest@687080dc]" name="GetUser" duration-ms="2695" started-at="2020-06-10T10:02:07Z" finished-at="2020-06-10T10:02:10Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [401]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at TestCases.UserTest.GetUser(UserTest.java:67)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUser -->
+        <test-method status="PASS" signature="reportFlush(org.testng.ITestResult)[pri:0, instance:TestCases.UserTest@687080dc]" name="reportFlush" is-config="true" duration-ms="34" started-at="2020-06-10T10:02:10Z" finished-at="2020-06-10T10:02:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetUser status=FAILURE method=UserTest.GetUser()[pri:2, instance:TestCases.UserTest@687080dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportFlush -->
+        <test-method status="PASS" signature="readConstants(java.lang.reflect.Method)[pri:0, instance:TestCases.UserTest@687080dc]" name="readConstants" is-config="true" duration-ms="0" started-at="2020-06-10T10:02:10Z" finished-at="2020-06-10T10:02:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestCases.UserTest.UpdateUser() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readConstants -->
+        <test-method status="PASS" signature="Header()[pri:0, instance:TestCases.UserTest@687080dc]" name="Header" is-config="true" duration-ms="0" started-at="2020-06-10T10:02:10Z" finished-at="2020-06-10T10:02:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Header -->
+        <test-method status="FAIL" signature="UpdateUser()[pri:3, instance:TestCases.UserTest@687080dc]" name="UpdateUser" duration-ms="1" started-at="2020-06-10T10:02:10Z" finished-at="2020-06-10T10:02:10Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[body cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: body cannot be null
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+at io.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:736)
+at Utility.RestClientWrapper.put(RestClientWrapper.java:43)
+at TestCases.UserTest.UpdateUser(UserTest.java:80)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method status="PASS" signature="reportFlush(org.testng.ITestResult)[pri:0, instance:TestCases.UserTest@687080dc]" name="reportFlush" is-config="true" duration-ms="32" started-at="2020-06-10T10:02:10Z" finished-at="2020-06-10T10:02:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UpdateUser status=FAILURE method=UserTest.UpdateUser()[pri:3, instance:TestCases.UserTest@687080dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportFlush -->
+      </class> <!-- TestCases.UserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
