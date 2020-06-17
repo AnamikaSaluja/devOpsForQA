@@ -37,6 +37,13 @@ pipeline
                 
             }
         }
+         stage('Uplodaing of artifactory'){
+            steps{
+                
+              
+                
+            }
+        }
         
        	}
         
