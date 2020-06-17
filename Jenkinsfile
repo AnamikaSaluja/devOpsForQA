@@ -12,7 +12,7 @@ pipeline
     {
         stage('checkout'){
             steps{
-                echo "Checkout my code"
+               checkout scm
                 
                
             }
@@ -20,8 +20,20 @@ pipeline
         
         stage('build'){
             steps{
-                echo "build"
+                
                 bat "mvn clean install"
+                
+            }
+        }
+        
+          stage('sonar analysis'){
+            steps{
+                
+               echo "Sonar"
+                withSonarQubeEnv("local sonar")
+                {
+                    bar ""
+                }
                 
             }
         }
