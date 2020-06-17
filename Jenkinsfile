@@ -32,7 +32,7 @@ pipeline
                echo "Sonar"
                 withSonarQubeEnv("local sonar")
                 {
-                    bar ""
+                    bar "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
                 }
                 
             }
