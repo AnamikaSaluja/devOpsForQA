@@ -3,49 +3,37 @@ pipeline
     agent any
     tools
     {
-       
-   maven 'Maven'
-
+        maven 'Maven'
     }
     
     stages
     {
-        stage('checkout'){
+        stage('Checkout'){
             steps{
-               checkout scm
-                
-               
+                echo "checkout"
+                git branch:"master", url:"https://github.com/AnamikaSaluja/devOpsAssignment"
+				//checkout scm
             }
         }
         
-        stage('build'){
+        stage('Build'){
             steps{
-                
+                echo "build"
                 bat "mvn clean install"
-                
             }
         }
         
-          stage('sonar analysis'){
+        stage('sonar analysis'){
             steps{
-                
-               echo "Sonar"
-                withSonarQubeEnv("local sonar")
-                {
-                    bar "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
-                }
-                
+                echo "sonar"
+                withSonarQubeEnv("local sonar") 
+				{
+					bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
+				}
             }
         }
-         stage('Uplodaing of artifactory'){
-            steps{
-                
-              
-                
-            }
-        }
+		
+		
         
-       	}
-        
-    
+    }
 }
